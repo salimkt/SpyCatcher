@@ -82,6 +82,12 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
+function writeData() {
+	firebase.database().ref("user").set({
+		name: document.getElementById("name").value,
+		email: document.getElementById("email").value,
+		password: document.getElementById("password").value
+}
 	
 </script>
 
